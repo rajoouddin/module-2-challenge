@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Rajoo Uddin | Web Developer</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <!-- main logo / nav / hero -->
+  <header class="hero-banner">
+    <nav>
+      <h1 id="home">Rajoo <span class="blue">Uddin</span></h1>
+      <img class="avatar" src="./my-images/avatar.svg" alt="avatar picture">
+      <ul>
+        <li><a class="highlight" href="#home">Home</a></li>
+        <li><a href="#about">About me</a></li>
+        <li><a href="#work">My work</a></li>
+        <li><a href="#skills">My skills</a></li>
+        <li><a href="#contact">Contact me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main class="page-wrapper">
+    <h2 class="portfolio">My Portfolio</h2>
+    <!-- about me -->
+    <section class="page-section" id="about">
+      <h2>About Me</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis deserunt ex voluptates eos rerum aspernatur, fugiat, nostrum, quibusdam aut aperiam eaque molestiae mollitia ducimus. Placeat ipsa qui delectus repudiandae tenetur ex vitae ad natus eveniet quos! Voluptates a maiores dolore quidem, quos repudiandae pariatur facere, magni earum maxime vel animi vero, quas aliquam esse doloribus labore. Harum esse, ut ratione expedita pariatur quasi est a velit consectetur ex animi nulla tenetur, similique quis corrupti voluptatibus accusantium, debitis soluta repudiandae autem atque reprehenderit voluptates consequatur doloribus.</p> 
+    </section>
+
+    <!-- portfolio container -->
+    <section class="page-section" id="work">
+      <h2>My Work</h2>
+      <section class="work">
+        <h3 class="proj-title">Project 1</h3>
+        <img class="proj-img" src="./my-images/proj-1.jpg" alt="desk with laptop and a big screen on the wall">
+      </section>
+      <section class="work">
+        <h3 class="proj-title">Project 2</h3>
+        <img class="proj-img" src="./my-images/proj-2.jpg" alt="desk with a laptop, copper cup and book">
+      </section>
+      <section class="work">
+        <h3 class="proj-title">Project 3</h3>
+        <img class="proj-img" src="./my-images/proj-3.jpg" alt="arm expended out holding a lightbulb in hand">
+      </section>
+      <section class="work">
+        <h3 class="proj-title">Project 4</h3>
+        <img class="proj-img" src="./my-images/proj-4.jpg" alt="black and white image of a city under construction">
+      </section>
+      <section class="work">
+        <h3 class="proj-title">Project 5</h3>
+        <img class="proj-img" src="./my-images/proj-5.jpg" alt="desk with laptop, pencils and a cup of coffee">
+      </section>
+    </section>
+
+    <!-- skills -->
+    <section class="page-section" id="skills">
+      <h2>My Skills</h2>
+      <ul>
+        <li>HTML <br />
+            <progress min="0" max="100" value="40"></progress>
+        </li>
+        <li>CSS <br />
+            <progress min="0" max="100" value="20"></progress>
+        </li>
+        <li>JavaScript <br />
+            <progress min="0" max="100" value="0"></progress>
+        </li>
+    </ul>
+    </section>
+
+    <!-- contact -->
+    <section class="page-section" id="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <input name="name" placeholder="Name" type="text" required /><br/>
+        <input name="email" placeholder="Email" type="email" required /><br/>
+        <textarea name="message" placeholder="Message" required ></textarea><br/>
+        <input type="submit" value="Submit" class="submit" />
+    </form>
+    </section>
+  </main>
+</body>
+
+</html>

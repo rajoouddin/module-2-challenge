@@ -1,0 +1,206 @@
+:root {
+  --blue: rgb(2, 70, 255);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+  background-color: rgb(19, 18, 18);
+  width: 70%;
+}
+
+main {
+  color: white;
+  margin: auto;
+  width: 70%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+
+/* title, image and nav starts here */
+.hero-banner {
+  height: 80vh;
+  width: 100%;
+  background-image: url(../../my-images/hero-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+#home {
+  color: white;
+  padding: 40px;
+  font-size: 60px;
+}
+
+.blue {
+  color: var(--blue)
+}
+
+nav h1 {
+  display: block;
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  color: white;
+  list-style: none;
+  padding: 40px;
+}
+
+li {
+  margin: 0 20px;
+  font-size: 25px;
+}
+
+.highlight {
+  color: var(--blue);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.avatar {
+  width: 150px;
+  display: block;
+  margin: auto;
+}
+
+a:hover {
+  color: var(--blue);
+}
+/* title, image and nav ends here */
+
+
+/* main section starts here */
+.portfolio {
+  color: white;
+  font-size: 70px;
+  border-bottom: 5px solid var(--blue);
+}
+
+
+/* about me section starts here */
+.page-section {
+  margin: 30px 0;
+}
+
+.page-section h2 {
+  font-size: 50px;
+}
+
+#about p {
+  font-size: 25px;
+}
+/* about me section ends here */
+
+
+/* portfolio section starts here */
+.work img {
+  width: 100%;
+  height: 80vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: ;
+}
+
+.proj-img {
+  
+}
+/* portfolio section ends here */
+
+
+/* skill section starts here */
+#skills ul {
+  text-align: center;
+}
+#skills li {
+  margin-bottom: 15px;
+  font-weight: bold;
+  list-style: none;
+}
+
+progress {
+  width: 70%;
+  height: 20px;
+  color: var(--blue);
+  background: #efefef;
+}
+progress::-webkit-progress-bar {
+  background: #efefef;
+}
+progress::-webkit-progress-value {
+  background: var(--blue);
+} 
+progress::-moz-progress-bar {
+  color: var(--blue);
+  background: #efefef;
+}
+/* skill section ends here */
+
+
+/* contact form starts here */
+#contact {
+  margin-bottom: 40px;
+}
+
+form {
+  margin-top: 0;
+}
+
+.submit {
+  background-color: var(--blue);
+  border-radius: 5px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.submit:hover {
+  background-color: white;
+  color: var(--blue);
+}
+textarea {
+  height: 100px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+input, textarea {
+  margin-bottom: 10px;
+  font-size: 25px;
+  padding: 15px 10px 10px;
+  border: 1px solid var(--blue);
+  background-color: #efefef;
+  color: #787575;
+  border-radius: 5px;
+  width: 100%;
+  outline: none;
+}
+/* contact form ends here */
+
+
