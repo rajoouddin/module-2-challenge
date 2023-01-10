@@ -1,140 +1,175 @@
+/* variables */
 :root {
+  --white: #f9f9f9;
+  --purple: #341572;
+  --gray: #85888C;
   --blue: rgb(2, 70, 255);
 }
-
+/* global settings */
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
 html {
   scroll-behavior: smooth;
 }
-
 body {
   margin: 0 auto;
-  padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
-  background-color: rgb(19, 18, 18);
   width: 70%;
+  background-image: url("/my-images/site-background.jpg");
+  background-size: cover;
+  color: white;
 }
-
 main {
   color: white;
   margin: auto;
-  width: 70%;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
+a {
+  text-decoration: none;
+  color: var(--white);
 }
-
-p {
-  margin: 0;
+ul {
+  list-style: none;
 }
 
 
 /* title, image and nav starts here */
-.hero-banner {
-  height: 80vh;
+/* header */
+.header {
+  background-color: var(--purple);
+  position: sticky;
+  top: 0;
   width: 100%;
-  background-image: url(../../my-images/hero-img.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
 }
-
-#home {
-  color: white;
-  padding: 40px;
-  font-size: 60px;
+/* Logo */
+.logo {
+color: var(--white);
+font-size: 60px;
+margin-left: 10px;
+padding-bottom: 20px;
 }
-
-.blue {
-  color: var(--blue)
+.logo img {
+margin-right: 15px;
+margin-top: 30px;
+width: 80px;
 }
-
-nav h1 {
+/* nav menu */
+.nav {
+  width: 70%;
+  position: fixed;
+  background-color: var(--purple);
+  overflow: hidden;
+}
+.menu a {
   display: block;
-  text-align: center;
+  padding: 15px 15px;
+  color: var(--white);
+  font-size: 20px;
 }
-
-nav ul {
-  display: flex;
-  justify-content: center;
-  color: white;
-  list-style: none;
-  padding: 40px;
+.menu a:hover {
+  background-color: var(--blue);
 }
-
-li {
-  margin: 0 20px;
-  font-size: 25px;
+.nav {
+  max-height: 0;
+  transition: max-height .5s ease-out;
 }
-
-.highlight {
-  color: var(--blue);
+/* Menu Icon */
+.hamb {
+  cursor: pointer;
+  float: right;
+  padding: 40px 20px;
 }
-
-a {
-  text-decoration: none;
-  color: white;
-}
-
-.avatar {
-  width: 150px;
+.hamb-line {
+  background: var(--white);
   display: block;
-  margin: auto;
+  height: 2px;
+  position: relative;
+  width: 24px;
 }
+.hamb-line::before,
+.hamb-line::after {
+  background: var(--white);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+.hamb-line::before {
+  top: 5px;
+}
+.hamb-line::after {
+  top: -5px;
+}
+.side-menu {
+  display: none;
+} 
+/* Hide checkbox */
 
-a:hover {
-  color: var(--blue);
+/* Toggle menu icon */
+.side-menu:checked ~ nav {
+  max-height: 100%;
+}
+.side-menu:checked ~ .hamb .hamb-line {
+  background: transparent;
+}
+.side-menu:checked ~ .hamb .hamb-line::before {
+  transform: rotate(-45deg);
+  top:0;
+}
+.side-menu:checked ~ .hamb .hamb-line::after {
+  transform: rotate(45deg);
+  top:0;
 }
 /* title, image and nav ends here */
 
-
 /* main section starts here */
 .portfolio {
-  color: white;
-  font-size: 70px;
-  border-bottom: 5px solid var(--blue);
+  font-size: 50px;
+  border-bottom: 5px solid var(--purple);
+  padding: 20px 0;
+  background-image: url("/my-images/hero-img.jpg");
+  background-size: cover;
+  height: 300px;
 }
-
 
 /* about me section starts here */
 .page-section {
   margin: 30px 0;
 }
-
 .page-section h2 {
   font-size: 50px;
 }
-
 #about p {
   font-size: 25px;
+  padding-bottom: 30px;
+  border-bottom: 5px solid var(--purple);
 }
 /* about me section ends here */
 
-
 /* portfolio section starts here */
-.work img {
-  width: 100%;
-  height: 80vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: ;
+.projects {
+  text-align: center;
 }
-
 .proj-img {
-  
+  width: 40%;
+  min-width: 400px;
+  padding: 10px;
+}
+.proj-img1 {
+  width: 70%;
+  min-width: 500px;
+}
+.projects img:hover {
+  /* border: 1px solid #ffffff; */
+  background-color: var(--purple);
+  z-index: 100;
 }
 /* portfolio section ends here */
-
 
 /* skill section starts here */
 #skills ul {
@@ -145,7 +180,6 @@ a:hover {
   font-weight: bold;
   list-style: none;
 }
-
 progress {
   width: 70%;
   height: 20px;
@@ -164,16 +198,14 @@ progress::-moz-progress-bar {
 }
 /* skill section ends here */
 
-
 /* contact form starts here */
 #contact {
   margin-bottom: 40px;
 }
-
 form {
-  margin-top: 0;
+  margin: 0 auto;
+  width: 70%;
 }
-
 .submit {
   background-color: var(--blue);
   border-radius: 5px;
@@ -181,7 +213,6 @@ form {
   font-weight: bold;
   font-size: 20px;
 }
-
 .submit:hover {
   background-color: white;
   color: var(--blue);
@@ -203,4 +234,24 @@ input, textarea {
 }
 /* contact form ends here */
 
-
+/* Responsiveness */
+@media (width > 1450px) {
+  .nav{
+      max-height: none;
+      top: 0;
+      position: relative;
+      float: right;
+      width: fit-content;
+      background-color: transparent;
+  }
+  .menu li{
+      float: left;
+  }
+  .menu a:hover{
+      background-color: transparent;
+      color: var(--blue);
+  }
+  .hamb{
+      display: none;
+  }
+}

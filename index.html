@@ -11,11 +11,14 @@
 
 <body>
   <!-- main logo / nav / hero -->
-  <header class="hero-banner">
-    <nav>
-      <h1 id="home">Rajoo <span class="blue">Uddin</span></h1>
-      <img class="avatar" src="./my-images/avatar.svg" alt="avatar picture">
-      <ul>
+  <header class="header">
+    <!-- Logo -->
+    <a href="#" class="logo"><img class="avatar" src="https://cdn.icon-icons.com/icons2/2643/PNG/512/male_boy_person_people_avatar_icon_159358.png" alt="avatar picture">Rajoo Uddin</a>
+    <!-- Hamburger icon -->
+    <input class="side-menu" type="checkbox" id="side-menu"/>
+    <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+    <nav class="nav">
+      <ul class="menu">
         <li><a class="highlight" href="#home">Home</a></li>
         <li><a href="#about">About me</a></li>
         <li><a href="#work">My work</a></li>
@@ -25,39 +28,40 @@
     </nav>
   </header>
 
-
-  <main class="page-wrapper">
+  <main id="home">
     <h2 class="portfolio">My Portfolio</h2>
     <!-- about me -->
     <section class="page-section" id="about">
       <h2>About Me</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis deserunt ex voluptates eos rerum aspernatur, fugiat, nostrum, quibusdam aut aperiam eaque molestiae mollitia ducimus. Placeat ipsa qui delectus repudiandae tenetur ex vitae ad natus eveniet quos! Voluptates a maiores dolore quidem, quos repudiandae pariatur facere, magni earum maxime vel animi vero, quas aliquam esse doloribus labore. Harum esse, ut ratione expedita pariatur quasi est a velit consectetur ex animi nulla tenetur, similique quis corrupti voluptatibus accusantium, debitis soluta repudiandae autem atque reprehenderit voluptates consequatur doloribus.</p> 
     </section>
-
+  </main>
     <!-- portfolio container -->
-    <section class="page-section" id="work">
+  <section class="page-section" id="work">
       <h2>My Work</h2>
-      <section class="work">
-        <h3 class="proj-title">Project 1</h3>
-        <img class="proj-img" src="./my-images/proj-1.jpg" alt="desk with laptop and a big screen on the wall">
-      </section>
-      <section class="work">
-        <h3 class="proj-title">Project 2</h3>
-        <img class="proj-img" src="./my-images/proj-2.jpg" alt="desk with a laptop, copper cup and book">
-      </section>
-      <section class="work">
-        <h3 class="proj-title">Project 3</h3>
-        <img class="proj-img" src="./my-images/proj-3.jpg" alt="arm expended out holding a lightbulb in hand">
-      </section>
-      <section class="work">
-        <h3 class="proj-title">Project 4</h3>
-        <img class="proj-img" src="./my-images/proj-4.jpg" alt="black and white image of a city under construction">
-      </section>
-      <section class="work">
-        <h3 class="proj-title">Project 5</h3>
-        <img class="proj-img" src="./my-images/proj-5.jpg" alt="desk with laptop, pencils and a cup of coffee">
-      </section>
-    </section>
+      <div class="projects">
+        <section>
+          <h3 class="proj-title">Project 1</h3>
+          <a href="#" class="img-hover"><img class="proj-img1" src="./my-images/proj-1.jpg" alt="desk with laptop and a big screen on the wall" ></a>
+        </section>
+        <section class="work">
+          <h3 class="proj-title">Project 2</h3>
+          <a href="#" class="img-hover sub-proj"><img class="proj-img" src="./my-images/proj-2.jpg" alt="desk with a laptop, copper cup and book"></a>
+        </section>
+        <section class="work">
+          <h3 class="proj-title">Project 3</h3>
+          <a href="#" class="img-hover sub-proj"><img class="proj-img" src="./my-images/proj-3.jpg" alt="arm expended out holding a lightbulb in hand"></a>
+        </section>
+        <section class="work">
+          <h3 class="proj-title">Project 4</h3>
+          <a href="#" class="img-hover sub-proj"><img class="proj-img" src="./my-images/proj-4.jpg" alt="black and white image of a city under construction"></a>
+        </section>
+        <section class="work">
+          <h3 class="proj-title">Project 5</h3>
+          <a href="#" class="img-hover sub-proj"><img class="proj-img" src="./my-images/proj-5.jpg" alt="desk with laptop, pencils and a cup of coffee"></a>
+        </section>
+      </div>
+  </section>
 
     <!-- skills -->
     <section class="page-section" id="skills">
@@ -72,7 +76,7 @@
         <li>JavaScript <br />
             <progress min="0" max="100" value="0"></progress>
         </li>
-    </ul>
+      </ul>
     </section>
 
     <!-- contact -->
@@ -85,7 +89,6 @@
         <input type="submit" value="Submit" class="submit" />
     </form>
     </section>
-  </main>
 </body>
 
 </html>
