@@ -19,7 +19,7 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
   width: 70%;
-  background-image: url("/my-images/site-background.jpg");
+  background-color: #190b35;
   background-size: cover;
   color: white;
 }
@@ -132,7 +132,7 @@ width: 80px;
   font-size: 50px;
   border-bottom: 5px solid var(--purple);
   padding: 20px 0;
-  background-image: url("/my-images/hero-img.jpg");
+  background-image: url("/my-images/site-background.jpg");
   background-size: cover;
   height: 300px;
 }
