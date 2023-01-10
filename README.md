@@ -1,4 +1,14 @@
 # Unit 2 Challenge: Portfolio
+---
+---
+## Finished site details
+
+Here is the finished site from this challenge - [Rajoo-Uddin-Module-2-Challenge](https://rajoouddin.github.io/module-2-challenge/)
+
+The below information describes what I was tasked with and the criteria I had to meet in order to submit my work.
+
+---
+---
 
 ## Your Task
 
